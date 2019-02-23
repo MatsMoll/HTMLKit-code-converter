@@ -4,13 +4,19 @@ import Vapor
 public func routes(_ router: Router) throws {
     // "It works" page
     router.get { req in
-        return try req.view().render("welcome")
+        return try req.view().render("base")
     }
     
     // Says hello
-    router.get("hello", String.parameter) { req -> Future<View> in
-        return try req.view().render("hello", [
-            "name": req.parameters.next(String.self)
-        ])
+    router.post { req -> String in
+        guard let htmlData = req.http.body.data,
+            let html = String(data: htmlData, encoding: .utf8) else {
+            throw Abort(.badRequest)
+        }
+        return try SafeleafHTMLConverter(file: html).convert()
     }
+}
+
+struct GenerateContent: Content {
+    let html: String
 }
