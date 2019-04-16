@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "cmark",
+        "repositoryURL": "https://github.com/brokenhandsio/cmark-gfm.git",
+        "state": {
+          "branch": null,
+          "revision": "351e5cb1bc6a43567b8ff9b9b3f7357c58bdda83",
+          "version": "1.0.1"
+        }
+      },
+      {
         "package": "Console",
         "repositoryURL": "https://github.com/vapor/console.git",
         "state": {
@@ -38,6 +47,15 @@
         }
       },
       {
+        "package": "HTMLKit",
+        "repositoryURL": "https://github.com/vapor-community/HTMLKit.git",
+        "state": {
+          "branch": null,
+          "revision": "9e6e3670c0e1c1810ab5c1babefae4fbeab8ca96",
+          "version": "1.2.0"
+        }
+      },
+      {
         "package": "HTTP",
         "repositoryURL": "https://github.com/vapor/http.git",
         "state": {
@@ -47,12 +65,21 @@
         }
       },
       {
-        "package": "Leaf",
-        "repositoryURL": "https://github.com/vapor/leaf.git",
+        "package": "Lingo",
+        "repositoryURL": "https://github.com/miroslavkovac/Lingo.git",
         "state": {
           "branch": null,
-          "revision": "d35f54cbac723e673f9bd5078361eea74049c8d7",
-          "version": "3.0.2"
+          "revision": "f21f388b04239641b3e88d14f21762125faa9857",
+          "version": "3.0.5"
+        }
+      },
+      {
+        "package": "SwiftMarkdown",
+        "repositoryURL": "https://github.com/vapor-community/markdown.git",
+        "state": {
+          "branch": null,
+          "revision": "aea4876786fa284f6d86af1ce3436a17e22035b5",
+          "version": "0.4.0"
         }
       },
       {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SafeleafHTMLConverter {
+class HTMLKitHTMLConverter {
 
     enum Errors: Error {
         case rootNotFound
@@ -61,9 +61,7 @@ class SafeleafHTMLConverter {
                 if let children = node.children {
                     output += ".child("
                     tabIndent += 1
-                    if children.first?.kind != .text {
-                        output += "\n" + String(repeating: "    ", count: tabIndent)
-                    }
+                    output += "\n" + String(repeating: "    ", count: tabIndent)
 //                    output += "\n" + String(repeating: "    ", count: tabIndent)
                     for node in children {
                         do {
@@ -73,6 +71,7 @@ class SafeleafHTMLConverter {
                     }
                     output.removeLast(4 * tabIndent + 2)
                     tabIndent -= 1
+                    output += "\n" + String(repeating: "    ", count: tabIndent)
                     output += ")"
                 }
 //                output += "\n" + String(repeating: "    ", count: tabIndent)

@@ -4,7 +4,7 @@ import Vapor
 public func routes(_ router: Router) throws {
     // "It works" page
     router.get { req in
-        return try req.view().render("base")
+        return try req.renderer().render(GeneratorPage.self)
     }
     
     // Says hello
@@ -13,7 +13,7 @@ public func routes(_ router: Router) throws {
             let html = String(data: htmlData, encoding: .utf8) else {
             throw Abort(.badRequest)
         }
-        return try SafeleafHTMLConverter(file: html).convert()
+        return try HTMLKitHTMLConverter(file: html).convert()
     }
 }
 
