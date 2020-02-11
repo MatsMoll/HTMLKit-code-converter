@@ -2,12 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "cmark",
-        "repositoryURL": "https://github.com/brokenhandsio/cmark-gfm.git",
+        "package": "BootstrapKit",
+        "repositoryURL": "https://github.com/MatsMoll/BootstrapKit.git",
         "state": {
           "branch": null,
-          "revision": "351e5cb1bc6a43567b8ff9b9b3f7357c58bdda83",
-          "version": "1.0.1"
+          "revision": "18c713bf1af7a73b07d223c22ccb43e254c14d9b",
+          "version": "1.0.0-beta.5"
         }
       },
       {
@@ -47,12 +47,12 @@
         }
       },
       {
-        "package": "HTMLKit",
-        "repositoryURL": "https://github.com/vapor-community/HTMLKit.git",
+        "package": "HTMLKitVaporProvider",
+        "repositoryURL": "https://github.com/MatsMoll/htmlkit-vapor-3-provider.git",
         "state": {
           "branch": null,
-          "revision": "9e6e3670c0e1c1810ab5c1babefae4fbeab8ca96",
-          "version": "1.2.0"
+          "revision": "3840ed9512f12db8d20b0195b1c4620b054f4d67",
+          "version": "1.0.0-beta.3"
         }
       },
       {
@@ -71,15 +71,6 @@
           "branch": null,
           "revision": "f21f388b04239641b3e88d14f21762125faa9857",
           "version": "3.0.5"
-        }
-      },
-      {
-        "package": "SwiftMarkdown",
-        "repositoryURL": "https://github.com/vapor-community/markdown.git",
-        "state": {
-          "branch": null,
-          "revision": "aea4876786fa284f6d86af1ce3436a17e22035b5",
-          "version": "0.4.0"
         }
       },
       {
